@@ -1,7 +1,7 @@
 # RISC-V five stages CPU
 This is a project based on the book "Digital design and computer architure RISC-V edition".
 I use Verilog to build the RISC-V CPU with five stages pipeline. This processor is Harvard architecture which means the instruction memory and data memory is split.
-<img src="https://github.com/BoChen-Ye/RISC-V-five-stage-CPU/tree/main/figure/archi.png" width="500"> 
+
 ![Harvard Architecture](https://github.com/BoChen-Ye/RISC-V-five-stage-CPU/tree/main/figure/archi.png)
 ## Document strcture
 - `mips` have two verilog file about MIPS CPU which from the website `www.ddcabook.com`.
