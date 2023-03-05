@@ -11,9 +11,12 @@ I use Verilog to build the RISC-V CPU with five stages pipeline. This processor 
 ![Control Unit](https://github.com/BoChen-Ye/RISC-V-five-stage-CPU/tree/main/figure/single_control.png)
 
 The Decoder and Encoding is 
+
 ![Decoder and Encoding](https://github.com/BoChen-Ye/RISC-V-five-stage-CPU/tree/main/figure/encoding.png)
 - `src_mini_pipeline` is verilog file about RISC-V CPU with five stages pipeline, and it can also run same basic instruction as single-cycle. This processor have a hazard unit to solves data hazard, structure hazard, and control hazard, and supports stalling, flushing and forwarding. I will expand architecture in the future to make it run all RV32i instruction.
+
 ![Pipelined Processor Architecture with hazard unit](https://github.com/BoChen-Ye/RISC-V-five-stage-CPU/tree/main/figure/pipelined_processor.png)
 - `sim` is simulation folder. The testbench file store in this folder. The testbench loads a program into the memories. This program exercises all of the instructions by performing a computation that should produce the correct result only if all of the instructions are functioning correctly. The machine code is stored in a text file called `RISCVtest.txt` in every src folder which is loaded by the testbench during simulation.
+
 ![RISCVtest](https://github.com/BoChen-Ye/RISC-V-five-stage-CPU/tree/main/figure/test.png)
 - `result` have the screenshots of waveform result.
