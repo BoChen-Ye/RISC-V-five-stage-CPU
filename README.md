@@ -5,8 +5,11 @@ I use Verilog to build the RISC-V CPU with five stages pipeline. This processor 
 ## Document strcture
 - `mips` have two verilog file about MIPS CPU which from the website `www.ddcabook.com`.
 - `src_single` have all verilog file about single-cycle RISC-V processor. This CPU is implemented as 32-bit RISC-V(RV32i) architecture. The instruction that this tiny CPU can run now are `sw,lw,add,sub,and,or,slt,addi,ori,slti,beq,jal`.
+
 ![Single-cycle Processor Architecture](https://github.com/BoChen-Ye/RISC-V-five-stage-CPU/tree/main/figure/single_cycle.png)
+
 ![Control Unit](https://github.com/BoChen-Ye/RISC-V-five-stage-CPU/tree/main/figure/single_control.png)
+
 The Decoder and Encoding is 
 ![Decoder and Encoding](https://github.com/BoChen-Ye/RISC-V-five-stage-CPU/tree/main/figure/encoding.png)
 - `src_mini_pipeline` is verilog file about RISC-V CPU with five stages pipeline, and it can also run same basic instruction as single-cycle. This processor have a hazard unit to solves data hazard, structure hazard, and control hazard, and supports stalling, flushing and forwarding. I will expand architecture in the future to make it run all RV32i instruction.
