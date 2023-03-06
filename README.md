@@ -19,5 +19,5 @@ The Decoder and Encoding is
 ![Pipelined Processor Architecture with hazard unit](figure/pipelined_processor.png)
 - `sim` is simulation folder. The testbench file store in this folder. The testbench loads a program into the memories. This program exercises all of the instructions by performing a computation that should produce the correct result only if all of the instructions are functioning correctly. The machine code is stored in a text file called `RISCVtest.txt` in every src folder which is loaded by the testbench during simulation.
 
-![RISCVtest](https://github.com/BoChen-Ye/RISC-V-five-stage-CPU/tree/main/figure/test.png)
+![RISCVtest](figure/test.png)
 - `result` have the screenshots of waveform result.
