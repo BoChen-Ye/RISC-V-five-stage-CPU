@@ -23,7 +23,7 @@ module Controller(
   wire [1:0] ResultSrcD,ResultSrcM,ResultSrcW;
   wire [2:0] ALUControlD;
   
-Maindec md(
+Maindec u_decode(
   	.op(opD),
 	
     .ResultSrc(ResultSrcD),
@@ -35,7 +35,7 @@ Maindec md(
     .ImmSrc(ImmSrcD),
     .ALUop(ALUopD)
   );
-  ALUdec ad(
+  ALUdec u_ALUdecode(
   	.opb5(opD[5]),
     .funct3(funct3D),
     .funct7b5(funct7b5D),

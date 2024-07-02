@@ -16,7 +16,7 @@ wire [1:0] ResultSrcE,ResultSrcW,ImmSrcD;
 wire [2:0] ALUControlE;
 wire [31:0]InstrD;
 
-Controller c(
+Controller u_control(
 	.clk(clk),
 	.reset(reset),
 	.opD(InstrD[6:0]),
@@ -36,7 +36,7 @@ Controller c(
     .ImmSrcD(ImmSrcD),
     .ALUControlE(ALUControlE)
 );
-Datapath dp(
+Datapath u_dp(
 	.clk(clk),
 	.reset(reset),
     .ResultSrcW(ResultSrcW),
