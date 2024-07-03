@@ -85,7 +85,6 @@ EXU u_EXU(
 	.forwardAE(forwardAE),
 	.forwardBE(forwardBE),
 	.ALUControlE(ALUControlE),
-	.PCplus4E(PCplus4E),
 	.ResultW(ResultW),
 	.ALUResultM(ALUResultM),
 	
@@ -93,7 +92,9 @@ EXU u_EXU(
 	.RdE(RdE),
 	.Rs1E(Rs1E),
 	.Rs2E(Rs2E),
+	.PCplus4E(PCplus4E),
 	.PCtargetE(PCtargetE),
+	.WriteDataE(WriteDataE),
 	.ALUResultE(ALUResultE)
 );
 

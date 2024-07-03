@@ -42,6 +42,7 @@ Flopenrc #(32) r3D(
 
 Regfile rf(
 	.clk(clk),
+	.reset(reset),
 	.we3(RegWriteW),
     .ra1(InstrD[19:15]),
 	.ra2(InstrD[24:20]),

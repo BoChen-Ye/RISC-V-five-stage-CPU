@@ -9,17 +9,18 @@ input [31:0] PCD,PCplus4D,ImmExtD,
 input		 flushE,ALUSrcE,
 input [1:0]  forwardAE, forwardBE,
 input [2:0]  ALUControlE,
-input [31:0] PCplus4E,
+
 input [31:0] ResultW,ALUResultM,
 
 output 		  ZeroE,
 output [4:0] RdE,Rs1E,Rs2E,
-output [31:0]PCtargetE,ALUResultE
+output [31:0]PCplus4E,
+output [31:0]PCtargetE,ALUResultE,WriteDataE
 );
 
 wire [31:0] ImmExtE;
 wire [31:0] RD1E,RD2E;
-wire [31:0] PCE,WriteDataE;
+wire [31:0] PCE;
 wire [31:0] SrcAE,SrcBE;
 wire [31:0] ImmExtE;
 
