@@ -1,18 +1,18 @@
 `timescale 1ns / 1ps
 
-module Dmem(
-	input         clk, we,
-    input  [31:0] a, wd,
+module DMEM(
+	input         clk, w_en,
+    input  [31:0] addr, w_data,
 	
-    output [31:0] rd
+    output [31:0] r_data
 );
 
 reg  [31:0] RAM[63:0];
 
-assign rd = RAM[a[31:2]]; // word aligned
+assign r_data = RAM[addr[31:2]]; // word aligned
 
 always @(posedge clk)
-  if (we)
-    RAM[a[31:2]] <= wd;
+  if (w_en)
+    RAM[addr[31:2]] <= w_data;
 
 endmodule

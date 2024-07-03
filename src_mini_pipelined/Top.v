@@ -26,13 +26,13 @@ Imem imem(
 	
 	.rd(InstrF)
 );
-Dmem dmem(
+DMEM dmem(
 	.clk(clk), 
-	.we(MemWriteM),
-    .a(DataAdrM), 
-	.wd(WriteDataM),
+	.w_en(MemWriteM),
+    .addr(DataAdrM), 
+	.w_data(WriteDataM),
     
-    .rd(ReadDataM)
+    .r_data(ReadDataM)
 );
 
 endmodule

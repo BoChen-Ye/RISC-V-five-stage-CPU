@@ -29,3 +29,4 @@ RISCVtest:
 
 ![RISCVtest](figure/test.png)
 - `result` have the screenshots of waveform result.
+- In Vivado, use absolute path to read txt file.

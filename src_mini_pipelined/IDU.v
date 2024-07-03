@@ -4,16 +4,14 @@
 module IDU(
 input 		 clk,reset,
 input [31:0] PCplus4F,PCF,InstrF,
-input flushD,
+input 		 flushD,stallD,
 input [1:0]  ImmSrcD,
 input [31:0] RegWriteW,ResultW,
-input [4:0] RdW,
+input [4:0]  RdW,
 
 output [31:0] InstrD,PCplus4D,ImmExtD,
 output [31:0] PCD,RD1D,RD2D
 );
-
-wire 		stallD;
 
 Flopenr #(32) r1D(
 	.clk(clk), 

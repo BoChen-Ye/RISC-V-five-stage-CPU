@@ -5,11 +5,12 @@ module IFU(
 input 		 clk,reset,
 input 		 PCSrcE,
 input  [31:0] PCtargetE,
+input stallF,
 
 output [31:0] PCF,
 output [31:0] PCplus4F
 );
-wire stallF;
+
 wire [31:0] PCnextF;
 
 Mux2 #(32) PCmux(

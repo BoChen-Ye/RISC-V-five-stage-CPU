@@ -22,7 +22,6 @@ wire [1:0]  forwardAE, forwardBE;
 wire 		stallD,stallF;
 wire [4:0]  Rs1D, Rs2D, Rs1E, Rs2E, RdM, RdW, RdE,RdD;
 wire 		flushD;
-wire [31:0] PCnextF;
 wire [31:0] PCplus4F,PCplus4D,PCplus4E,PCplus4M,PCplus4W;
 wire [31:0] PCD,PCE;
 wire [31:0] PCtargetE;
@@ -36,7 +35,9 @@ wire [31:0] ResultW;
 IFU u_IFU(
 	.clk(clk),
 	.reset(reset),
+	.PCSrcE(PCSrcE),
 	.PCtargetE(PCtargetE),
+	.stallF(stallF),
 	
 	.PCF(PCF),
 	.PCplus4F(PCplus4F)
@@ -51,6 +52,7 @@ IDU u_IDU(
 	.flushD(flushD),
 	.ImmSrcD(ImmSrcD),
 	.RdW(RdW),
+	.stallD(stallD),
 	.RegWriteW(RegWriteW),
 	.ResultW(ResultW),
 	
