@@ -30,3 +30,4 @@ RISCVtest:
 ![RISCVtest](figure/test.png)
 - `result` have the screenshots of waveform result.
 - In Vivado, use absolute path to read txt file.
+- `sim/Rsic2bin.py` is a python file which can translate RSIC-V instruction to binary and Hex.
