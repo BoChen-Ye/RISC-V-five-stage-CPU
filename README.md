@@ -7,7 +7,7 @@ Harvard Architecture:
 ![Harvard Architecture](figure/archi.png)
 ## Document strcture
 - `mips` have two verilog file about MIPS CPU which from the website `www.ddcabook.com`.
-- `src_single` have all verilog file about single-cycle RISC-V processor. This CPU is implemented as 32-bit RISC-V(RV32i) architecture. The instruction that this tiny CPU can run now are `sw,lw,add,sub,and,or,slt,addi,ori,slti,beq,jal`.
+- `src_single` have all verilog file about single-cycle RISC-V processor. This CPU is implemented as 32-bit RISC-V(RV32i) architecture. The instruction that this tiny CPU can run now are `sw,lw,add,sub,and,or,slt,addi,ori,slti,beq,jal,lui`.
 
 Single-cycle Processor Architecture:
 ![Single-cycle Processor Architecture](figure/single_cycle.png)
@@ -30,4 +30,4 @@ RISCVtest:
 ![RISCVtest](figure/test.png)
 - `result` have the screenshots of waveform result.
 - In Vivado, use absolute path to read txt file.
-- `sim/Rsic2bin.py` is a python file which can translate RSIC-V instruction to binary and Hex.
+- `sim/Risc2bin.py` is a python file which can translate RISC-V instruction to binary and Hex.
